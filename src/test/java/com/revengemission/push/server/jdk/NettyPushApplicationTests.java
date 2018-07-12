@@ -1,4 +1,4 @@
-package com.revengemission.netty.push.server;
+package com.revengemission.push.server.jdk;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,4 +1,4 @@
-package com.revengemission.netty.push.server;
+package com.revengemission.push.server;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -7,9 +7,9 @@ import org.springframework.stereotype.Service;
 public class HelloMessageService {
 
     @Value("${netty.port:unknown}")
-    private String name;
+    private String port;
 
-    public String getName() {
-        return name;
+    public String getPort() {
+        return port;
     }
 }

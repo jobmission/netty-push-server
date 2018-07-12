@@ -1,4 +1,4 @@
-package com.revengemission.netty.push.server;
+package com.revengemission.push.server.jdk;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -18,7 +18,7 @@ public class UnblockedClient {
     private SocketChannel socketChannel = null;
     private ByteBuffer sendBuffer = ByteBuffer.allocate(1024);
     private ByteBuffer receiveBuffer = ByteBuffer.allocate(1024);
-    private Charset charset = Charset.forName("GBK");
+    private Charset charset = Charset.forName("UTF8");
     private Selector selector;
 
     public UnblockedClient() throws IOException {

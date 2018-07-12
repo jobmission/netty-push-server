@@ -1,4 +1,4 @@
-package com.revengemission.netty.push.server;
+package com.revengemission.push.server;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -19,6 +19,6 @@ public class NettyPushApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         //do something
-        System.out.println(helloService.getName());
+        System.out.println("=========" + helloService.getPort());
     }
 }
