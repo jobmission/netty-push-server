@@ -15,10 +15,16 @@ public class NettyPushApplication implements CommandLineRunner {
         SpringApplication.run(NettyPushApplication.class, args);
     }
 
-    //access command line arguments
+    /**
+     * access command line arguments
+     *
+     * @param args
+     * @throws Exception
+     */
     @Override
     public void run(String... args) throws Exception {
         //do something
-        System.out.println("=========" + helloService.getPort());
+        System.out.println("CommandLineRunner run ========= " + args);
+        System.out.println("Server port ========= " + helloService.getPort());
     }
 }
